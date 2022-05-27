@@ -1,0 +1,255 @@
+@media (max-width: 992px) {
+  /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
+
+  .home {
+    position: relative;
+  }
+
+  .home .container {
+    position: unset;
+  }
+
+  .home__img {
+    width: 40%;
+  }
+
+  .home__img img {
+    width: 300px;
+  }
+
+  .home__social {
+    transform: translateX(-35%) rotate(270deg);
+  }
+
+  .home__data {
+    width: 60%;
+  }
+
+  /* @@@@@@@@@@@@@@@@ story @@@@@@@@@@@@@@@@@ */
+  .story__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .story__img {
+    width: 270px;
+    height: 270px;
+  }
+
+  .story__img img {
+    width: 270px;
+    height: 270px;
+    top: -3rem;
+    left: 3rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ testimonial @@@@@@@@@@@@@@@@@ */
+
+  .testimonial__container {
+    gap: 5rem;
+  }
+
+  .testimonial__img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .testimonial__img img {
+    width: 250px;
+    height: 250px;
+    top: 3rem;
+    right: 3rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ newsletter @@@@@@@@@@@@@@@@@ */
+  .newsletter__container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 765px) {
+  .section {
+    padding: 5rem 0 2rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@@ header @@@@@@@@@@@@@@@@@ */
+  .nav__toggle,
+  .nav__close {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .nav__toggle {
+    color: var(--body-color);
+  }
+
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--body-color);
+    padding: 7rem 2rem 2rem;
+    transition: 0.5s;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: unset;
+  }
+
+  .nav__link {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2rem;
+  }
+
+  /* change cartshop color and navtoggle color*/
+  .white-color {
+    color: var(--white-color);
+  }
+
+  /* Show menu */
+  .show-menu {
+    right: 0;
+  }
+
+  /* @@@@@@@@@@@@@@@@@ cart @@@@@@@@@@@@@@@@@ */
+  .cart {
+    width: 100%;
+  }
+
+  /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
+  .home__img {
+    width: 50%;
+    height: 60vh;
+  }
+
+  .home__social {
+    top: 30%;
+    transform: translateX(-35%) rotate(270deg);
+  }
+
+  .home__container {
+    align-items: flex-end;
+  }
+
+  .home__data {
+    padding-left: 0;
+    padding-bottom: 3rem;
+    width: 100%;
+  }
+
+  .home__description {
+    margin-bottom: var(--mb-1);
+  }
+
+  .home__price {
+    margin-bottom: var(--mb-2);
+  }
+
+  .home .btn {
+    padding: 0.7rem 1.4rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ story @@@@@@@@@@@@@@@@@ */
+
+  .story__container {
+    grid-template-columns: 1fr;
+    row-gap: 6rem;
+    padding-top: 0;
+  }
+
+  .story__img {
+    order: 2;
+    width: 250px;
+    height: 250px;
+  }
+
+  .story__img img {
+    width: 250px;
+    height: 250px;
+    top: -3rem;
+    left: 3rem;
+  }
+
+  .story .section-title {
+    text-align: center;
+  }
+
+  .story .section-title::before {
+    inset: -1rem 0 auto 0;
+    margin: 0 auto;
+  }
+
+  /* @@@@@@@@@@@@@@@@ products @@@@@@@@@@@@@@@@@ */
+
+  .products__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products__card {
+    padding: 1.25rem 0;
+  }
+
+  .products__img {
+    height: 130px;
+  }
+
+  /* @@@@@@@@@@@@@@@@ testimonial @@@@@@@@@@@@@@@@@ */
+
+  .testimonial__container {
+    grid-template-columns: 1fr;
+  }
+
+  /* @@@@@@@@@@@@@@@@ newsletter @@@@@@@@@@@@@@@@@ */
+  .newsletter__container {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .newsletter__button {
+    padding: 1.3rem 1rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@ */
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
+  .home__img {
+    width: 60%;
+    height: 50vh;
+  }
+
+  .home__img img {
+    width: 200px;
+  }
+
+  .home__data {
+    padding-bottom: 2rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@ */
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}
