@@ -1,5 +1,5 @@
 # TIME
-TIME - Design Responsive Website Using HTML CSS &amp; JavaScript
+TIME - Responsive Website Design Using HTML CSS & JavaScript
 
 Desktop Design:
 
