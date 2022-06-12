@@ -1,5 +1,5 @@
 # TIME
-TIME - Responsive Website Design Using HTML CSS & JavaScript
+TIME - Responsive Ecommerce Website Design Using HTML CSS & JavaScript
 
 Desktop Design:
 
