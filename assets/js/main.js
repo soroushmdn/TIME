@@ -1,4 +1,5 @@
 // @@@@@@@@@@@@@@@@@ show menu @@@@@@@@@@@@@@@@@
+
 const navMenu = document.getElementById('nav-menu'),
   navToggle = document.getElementById('nav-toggle'),
   navClose = document.getElementById('nav-close');
@@ -12,6 +13,7 @@ navClose.addEventListener('click', () => {
 });
 
 // @@@@@@@@@@@@@@@@@ remove menu when click on navlinks @@@@@@@@@@@@@@@@@
+
 const navLinks = document.querySelectorAll('.nav__link');
 
 navLinks.forEach((n) => {
@@ -21,8 +23,9 @@ navLinks.forEach((n) => {
 });
 
 // @@@@@@@@@@@@@@@@@ show cart @@@@@@@@@@@@@@@@@
+
 const cart = document.getElementById('cart'),
-  cartShop = document.getElementById('cart-shop'),
+  cartShop = document.getElementById('nav-cart'),
   cartClose = document.getElementById('cart-close');
 
 cartShop.addEventListener('click', () => {
@@ -34,6 +37,7 @@ cartClose.addEventListener('click', () => {
 });
 
 // @@@@@@@@@@@@@@@@@ change header background @@@@@@@@@@@@@@@@@
+
 window.addEventListener('scroll', scrollHeader);
 
 function scrollHeader() {
@@ -51,41 +55,8 @@ function scrollHeader() {
   }
 }
 
-// @@@@@@@@@@@@@@@@@ testimonial swiper @@@@@@@@@@@@@@@@@
-let testimonialSwiper = new Swiper('.testimonial__swiper ', {
-  spaceBetween: 30,
-  loop: 'true',
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-// @@@@@@@@@@@@@@@@@ new swiper @@@@@@@@@@@@@@@@@
-let newSwiper = new Swiper('.new__swiper', {
-  spaceBetween: 25,
-  loop: 'true',
-
-  breakpoints: {
-    576: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 4,
-    },
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
 // @@@@@@@@@@@@@@@@@ show scroll up @@@@@@@@@@@@@@@@@
+
 window.addEventListener('scroll', scrollUp);
 function scrollUp() {
   const scrollUp = document.getElementById('scrollup');
@@ -96,3 +67,39 @@ function scrollUp() {
     scrollUp.classList.remove('show-scrollup');
   }
 }
+
+// @@@@@@@@@@@@@@@@@ new swiper @@@@@@@@@@@@@@@@@
+
+let newSwiper = new Swiper('.new__swiper', {
+  spaceBetween: 25,
+  loop: 'true',
+
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    767: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+  },
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+// @@@@@@@@@@@@@@@@@ testimonial swiper @@@@@@@@@@@@@@@@@
+
+let testimonialSwiper = new Swiper('.testimonial__swiper ', {
+  spaceBetween: 30,
+  loop: 'true',
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
