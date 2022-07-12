@@ -1,28 +1,29 @@
 @media (max-width: 992px) {
-  /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
-
-  .home {
-    position: relative;
+  .nav__cart {
+    margin-right: 0;
   }
 
+  /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
   .home .container {
-    position: unset;
+    width: initial;
+    margin-left: 1.5rem;
+  }
+
+  .home__container {
+    padding-bottom: 5rem;
   }
 
   .home__img {
-    width: 40%;
+    height: 600px;
+    margin-left: 6rem;
   }
 
   .home__img img {
-    width: 300px;
-  }
-
-  .home__social {
-    transform: translateX(-35%) rotate(270deg);
+    width: 220px;
   }
 
   .home__data {
-    width: 60%;
+    padding-left: 4rem;
   }
 
   /* @@@@@@@@@@@@@@@@ story @@@@@@@@@@@@@@@@@ */
@@ -45,7 +46,7 @@
   /* @@@@@@@@@@@@@@@@ testimonial @@@@@@@@@@@@@@@@@ */
 
   .testimonial__container {
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .testimonial__img {
@@ -62,15 +63,11 @@
 
   /* @@@@@@@@@@@@@@@@ newsletter @@@@@@@@@@@@@@@@@ */
   .newsletter__container {
-    gap: 2rem;
+    padding: 3rem;
   }
 }
 
-@media (max-width: 765px) {
-  .section {
-    padding: 5rem 0 2rem;
-  }
-
+@media (max-width: 767px) {
   /* @@@@@@@@@@@@@@@@@ header @@@@@@@@@@@@@@@@@ */
   .nav__toggle,
   .nav__close {
@@ -89,14 +86,16 @@
     width: 100%;
     height: 100%;
     background: var(--body-color);
-    padding: 7rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 0.5s;
   }
 
   .nav__list {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
     margin-left: unset;
   }
 
@@ -128,36 +127,25 @@
   }
 
   /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
-  .home__img {
-    width: 50%;
-    height: 60vh;
-  }
-
-  .home__social {
-    top: 30%;
-    transform: translateX(-35%) rotate(270deg);
-  }
-
   .home__container {
-    align-items: flex-end;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+
+  .home__img {
+    order: -1;
+    height: 500px;
+    width: 350px;
+    margin-left: 0;
+    justify-self: end;
   }
 
   .home__data {
     padding-left: 0;
-    padding-bottom: 3rem;
-    width: 100%;
   }
 
-  .home__description {
-    margin-bottom: var(--mb-1);
-  }
-
-  .home__price {
-    margin-bottom: var(--mb-2);
-  }
-
-  .home .btn {
-    padding: 0.7rem 1.4rem;
+  .home__social {
+    top: -15rem;
   }
 
   /* @@@@@@@@@@@@@@@@ story @@@@@@@@@@@@@@@@@ */
@@ -214,6 +202,7 @@
   .newsletter__container {
     grid-template-columns: 1fr;
     padding: 3rem 1.5rem;
+    gap: 2rem;
     text-align: center;
   }
 
@@ -223,7 +212,7 @@
   }
 
   .newsletter__button {
-    padding: 1.3rem 1rem;
+    padding: 1.2rem 1rem;
   }
 
   /* @@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@ */
@@ -235,21 +224,118 @@
 
 @media (max-width: 576px) {
   /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
+
   .home__img {
-    width: 60%;
-    height: 50vh;
+    height: 400px;
+    width: 230px;
+    margin-left: 0;
+    justify-self: end;
   }
 
   .home__img img {
-    width: 200px;
+    width: 180px;
   }
 
   .home__data {
-    padding-bottom: 2rem;
+    padding-right: 1.5rem;
+  }
+
+  .home__price {
+    margin-bottom: var(--mb-2);
+  }
+
+  .home__social {
+    top: -12rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ products @@@@@@@@@@@@@@@@@ */
+
+  .products__container {
+    gap: 2rem 1.5rem;
   }
 
   /* @@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@ */
+
   .footer__container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 374px) {
+  /* @@@@@@@@@@@@@@@@@ cart @@@@@@@@@@@@@@@@@ */
+  .cart__container {
+    margin-bottom: 3rem;
+  }
+
+  .cart__img {
+    padding: 0.8rem 1.2rem;
+  }
+
+  .cart__price {
+    margin-bottom: var(--mb-1);
+  }
+
+  /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
+  .home__img {
+    height: 300px;
+    width: 180px;
+  }
+
+  .home__img img {
+    width: 150px;
+  }
+
+  .home__social {
+    top: -10rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ story @@@@@@@@@@@@@@@@@ */
+  .story__img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .story__img img {
+    width: 200px;
+    height: 200px;
+    top: -2rem;
+    left: 2rem;
+  }
+
+  /* @@@@@@@@@@@@@@@@ products @@@@@@@@@@@@@@@@@ */
+
+  .products__container {
+    gap: 1.5rem 1rem;
+  }
+
+  .products__img {
+    height: 100px;
+  }
+
+  /* @@@@@@@@@@@@@@@@ testimonial @@@@@@@@@@@@@@@@@ */
+
+  .testimonial__img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .testimonial__img img {
+    width: 200px;
+    height: 200px;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+/*@@@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@@@@*/
+@media (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
   }
 }
