@@ -850,7 +850,7 @@ main {
   position: fixed;
   bottom: -30%;
   right: 1rem;
-  z-index: 100;
+  z-index: 99;
 }
 
 .scrollup:hover {
