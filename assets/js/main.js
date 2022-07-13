@@ -1,3 +1,12 @@
+//  @@@@@@@@@@@@@@@@@@ PRELOADER @@@@@@@@@@@@@@@@@@
+onload = () => {
+  const preloader = document.getElementById('preloader');
+
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 2500);
+};
+
 // @@@@@@@@@@@@@@@@@ show menu @@@@@@@@@@@@@@@@@
 
 const navMenu = document.getElementById('nav-menu'),
@@ -102,4 +111,24 @@ let testimonialSwiper = new Swiper('.testimonial__swiper ', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
+
+//  @@@@@@@@@@@@@@@@@@@ scrollrevealjs.org @@@@@@@@@@@@@@@@@@@@
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+});
+
+sr.reveal(`.home__data,.new__swiper`);
+sr.reveal(`.home__img`, { origin: 'bottom' });
+sr.reveal(`.story__img,.testimonial__swiper,.newsletter__data`, {
+  origin: 'left',
+});
+sr.reveal(`.story__data,.testimonial__img,.newsletter__form`, {
+  origin: 'right',
+});
+sr.reveal(`.featured__card,.products__card,.footer__content`, {
+  interval: 150,
 });
