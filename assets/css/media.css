@@ -257,7 +257,7 @@
   /* @@@@@@@@@@@@@@@@ footer @@@@@@@@@@@@@@@@@ */
 
   .footer__container {
-    grid-template-columns: 1fr;
+    grid-template-columns: max-content;
   }
 }
 
@@ -277,12 +277,12 @@
 
   /* @@@@@@@@@@@@@@@@ home @@@@@@@@@@@@@@@@@ */
   .home__img {
-    height: 300px;
+    height: 320px;
     width: 180px;
   }
 
   .home__img img {
-    width: 150px;
+    width: 160px;
   }
 
   .home__social {
@@ -327,7 +327,9 @@
   }
 }
 
-/*@@@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@@@@*/
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+ @@@@@@@@@@@@@@@@ 2K & 4K DISPLAYS @@@@@@@@@@@@@@@@@@@
+ @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 @media (min-width: 2048px) {
   body {
     zoom: 1.5;
