@@ -293,13 +293,15 @@ main {
   gap: 3rem;
 }
 
-.cart__amount-box {
+.cart__amount-box i{
   display: flex;
   background: var(--container-color);
   padding: 0.3rem;
   cursor: pointer;
   border: solid 1px var(--border-color);
 }
+
+
 
 .cart__amount-trash {
   color: var(--first-color);
