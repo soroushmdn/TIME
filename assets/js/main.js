@@ -32,7 +32,6 @@ navLinks.forEach((n) => {
 });
 
 // @@@@@@@@@@@@@@@@@ show cart @@@@@@@@@@@@@@@@@
-
 const cart = document.getElementById('cart'),
   cartShop = document.getElementById('nav-cart'),
   cartClose = document.getElementById('cart-close');
@@ -43,6 +42,33 @@ cartShop.addEventListener('click', () => {
 
 cartClose.addEventListener('click', () => {
   cart.classList.remove('show-cart');
+});
+
+// Increment and decreament button for cart section
+const plusButtons = document.querySelectorAll('.cart__amount .bx-plus');
+const minusButtons = document.querySelectorAll('.cart__amount .bx-minus');
+let a = 1;
+
+plusButtons.forEach((plus) => {
+  plus.addEventListener('click', () => {
+    const cartAmount = plus.parentElement.parentElement.querySelector(
+      '.cart__amount-number'
+    );
+    a++;
+    cartAmount.innerText = a;
+  });
+});
+
+minusButtons.forEach((minus) => {
+  minus.addEventListener('click', () => {
+    if (a > 1) {
+      const cartAmount = minus.parentElement.parentElement.querySelector(
+        '.cart__amount-number'
+      );
+      a--;
+      cartAmount.innerText = a;
+    }
+  });
 });
 
 // @@@@@@@@@@@@@@@@@ change header background @@@@@@@@@@@@@@@@@
